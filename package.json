@@ -10,6 +10,7 @@
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "whatwg-fetch": "^3.6.2"
   }
 }
