@@ -1,0 +1,15 @@
+div {
+  display: block;
+}
+
+.article-wrapper {
+  margin: 0;
+  padding: 0.4em 1em 6em;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.article-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
