@@ -1,8 +1,11 @@
+import showArticle from './show-article.js';
+
 export default function fetchArticle(url) {
   function toHTML(textArticle) {
     const parser = new DOMParser();
 
     const htmlArticle = parser.parseFromString(textArticle, 'text/html');
+    showArticle(htmlArticle);
     return htmlArticle;
   }
 
@@ -11,7 +14,7 @@ export default function fetchArticle(url) {
       const article = await fetch(url);
       const textArticle = await article.text().then((text) => (text));
 
-      toHTML(textArticle);
+      return toHTML(textArticle);
     } catch (error) {
       console.log(error);
     }
