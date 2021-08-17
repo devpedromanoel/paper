@@ -13,3 +13,13 @@ div {
   max-width: 650px;
   margin: 0 auto;
 }
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+
+}
+
+.article-info {
+  font-family: 'Courier New', Courier, monospace;
+}
