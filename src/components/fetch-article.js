@@ -11,7 +11,7 @@ export default function fetchArticle(url) {
 
   async function getArticle() {
     try {
-      const article = await fetch(url);
+      const article = await fetch(`https://glacial-headland-22036.herokuapp.com/${url}`);
       const textArticle = await article.text().then((text) => (text));
 
       return toHTML(textArticle);
