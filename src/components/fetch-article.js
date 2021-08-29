@@ -12,7 +12,7 @@ export default function fetchArticle(url) {
   async function getArticle() {
     try {
       document.querySelector('body').classList.remove('loaded');
-
+      
       const article = await fetch(`https://glacial-headland-22036.herokuapp.com/${url}`);
       const textArticle = await article.text().then((text) => (text));
 
