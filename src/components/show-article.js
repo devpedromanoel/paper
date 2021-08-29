@@ -1,5 +1,5 @@
 export default function showArticle(article) {
-  const divContainer = document.querySelector('.div-container');
+  const divContainer = document.querySelector('.container');
 
   function getElement(element) {
     return document.querySelector(element);
@@ -44,6 +44,7 @@ export default function showArticle(article) {
         getElement('.article-info').appendChild(arrayElements[i]);
       }
     }
+    document.querySelector('body').classList.add('loaded');
   }
 
   deleteElement(divContainer);
